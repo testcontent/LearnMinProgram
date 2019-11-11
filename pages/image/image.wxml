@@ -1,0 +1,24 @@
+<!-- 1.image 基本使用 -->
+
+<!-- 
+  1.可以是单标签，也可以是双标签
+  2.image组件有自己的大小 320 * 240
+  3.image组件是行内 块级元素 (inline-block)
+ -->
+<!-- <image /> -->
+<text>哈哈哈</text>
+
+<!-- 2.src 本地地址/远程地址 -->
+<image src="../../assets/tabbar/home.png" />
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
+
+<!-- 补充 手机相册图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}" />
+
+<!-- 3.bindload 图片加载完触发 -->
+<!-- lazy-load 懒加载 -->
+<image wx:for="{{1}}" bindload="handleImageLoad" lazy-load   src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
+<view>----------------------</view>
+<!-- 4.show-menu-by-longpress 开启长按图片显示识别小程序码菜单 -->
+<image show-menu-by-longpress src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />

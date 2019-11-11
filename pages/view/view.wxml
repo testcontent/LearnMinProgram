@@ -1,0 +1,8 @@
+<!--pages/view/view.wxml-->
+<view class="box">
+ksdf
+</view>
+<view>klsdk</view>
+
+<!-- hover-class -->
+<view class="box1" hover-class="hover-view" hover-stay-time="{{0}}">box1</view>

@@ -1,0 +1,15 @@
+<!--pages/text/text.wxml-->
+<text>hello world\n</text>
+<text>你好小程序\n</text>
+
+
+<text selectable>kldjkljkldfksklj\n</text>
+
+<!-- space 决定文本空格的大小 -->
+<text>kskj dkjlfkdljsjklf\n</text>
+<text space="nbsp">kskj dkjlfkdljsjklf\n</text>
+<text space="emsp">kskj dkjlfkdljsjklf\n</text>
+<text space="ensp">kskj dkjlfkdljsjklf\n</text>
+
+<!-- 解码 -->
+<text decode>5 &gt; 6</text>
