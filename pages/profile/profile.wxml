@@ -1,0 +1,6 @@
+<!--pages/profile/profile.wxml-->
+<text>pages/profile/profile.wxml</text>
+<view>我是个人页面</view>
+
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+<view>{{message}}</view>
