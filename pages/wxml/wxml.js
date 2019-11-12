@@ -12,7 +12,14 @@ Page({
     nowTime: new Date().toLocaleString(),
     isActive: false,
     isShow: true,
-    score: 45
+    score: 45,
+    dianying: ['a','b','c'],
+    nums: [
+      [1, 2],
+      [3, 4],
+      [5, 6]
+    ],
+    latters: ['a', 'b', 'c']
   },
   onLoad() {
     setInterval(() => {

@@ -1,0 +1,21 @@
+<!-- <wxs module="info">
+  // js 代码
+
+  var message = "hello world";
+  var name = '小明';
+
+  var sum = function(num) {
+    return num.toFixed(2);
+  }
+
+  module.exports = {
+    message: message,
+    sum: sum
+  }
+</wxs> -->
+
+<wxs src="../../wxs/info.wxs" module="info" />
+
+<view>{{info.message}}</view>
+<view>{{info.sum(price)}}</view>
+<view>{{info.dateFormat(time)}}</view>

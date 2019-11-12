@@ -1,0 +1,17 @@
+var message = "hello world";
+var name = '小明';
+
+var sum = function (num) {
+  return num.toFixed(2);
+}
+
+// 时间格式化
+function dateFormat(timestamp, format) {
+  return '2019年11月12日';
+}
+
+module.exports = {
+  message: message,
+  sum: sum,
+  dateFormat: dateFormat
+}

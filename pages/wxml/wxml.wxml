@@ -33,3 +33,37 @@
 <!-- wx:if 和 hidden 在隐藏组件时有什么区别？ -->
 <view hidden="{{true}}">我是hidden属性控制的内容</view>
 <view wx:if="{{false}}">我是wx:if属性控制的内容</view>
+
+<view>----------wx:for 列表渲染-----------</view>
+<!-- 1.wx:for -->
+<!-- 1.1 数组，字符串，数字 -->
+<!-- <view wx:for="{{['a','b','c']}}">{{item}}--{{index + 1}}</view>
+<view wx:for="dskldsk">{{item}}--{{index}}</view>
+<view wx:for="{{9}}">{{item}}</view> -->
+
+<!-- <block></block> -->
+
+<!-- 3.item index 起名字 -->
+<!-- <view wx:for="{{dianying}}" wx:for-item="ying" wx:for-index="i">{{ying}}--{{i}}</view>
+
+<block wx:for="{{nums}}" wx:for-item="inner_nums">
+  <block wx:for="{{inner_nums}}">
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!-- 4.key -->
+<!-- <view wx:for="{{latters}}" wx:key="{{item}}">{{item}}</view> -->
+
+<view>---------template--------------</view>
+<!-- 模板中包裹的内容，没有使用时，是不会渲染的 -->
+<!-- <template name="contentItem">
+  <button size="mini">{{btnText}}</button>
+  <view>{{content}}</view>
+</template> -->
+<import src="../../wxml/wxml.wxml" />
+
+<template is="contentItem" data="{{btnText:'按钮', content:'哈哈'}}" />
+
+
+<view>{{25.6666}}</view>
